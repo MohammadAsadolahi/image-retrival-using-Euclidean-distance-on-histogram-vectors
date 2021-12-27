@@ -68,6 +68,8 @@ for i in top10:
 print(f"item: {referenceIndex}.jpg  amount of: {match*10}% of similar pictures are form item's category")
 print(f"\n\n\n\n")
 
+
+#to test histogram plot and histogram calculations we try to retrive hist of an image and then plot it to make sure functions work correctly
 # for plot red channle of firt airplane picture:
 #
 # splited=np.split(images[29],[0,1,2],axis=2)
