@@ -30,12 +30,12 @@ where $H_C^k$ is the 256-bin histogram of channel $C$ for image $k$.
 ## 🏗️ How It Works
 
 ```
-Query Image
-    │
-    ▼
+    Query Image
+         │
+         ▼
 ┌──────────────────────┐
 │  Split into R, G, B  │
-│  channels             │
+│  channels            │
 └──────────┬───────────┘
            │
            ▼
