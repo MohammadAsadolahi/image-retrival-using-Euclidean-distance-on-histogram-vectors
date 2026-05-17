@@ -2,7 +2,7 @@
 
 # 🔍 Image Retrieval Using Euclidean Distance on Histogram Vectors
 
-**A content-based image retrieval (CBIR) system that finds visually similar images by comparing color histogram signatures using Euclidean distance.**
+**A content-based image retrieval (CBIR) system that finds visually similar images by comparing color histogram signatures using Mean Squared Error (MSE).**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org)
@@ -48,7 +48,7 @@ where $H_C^k$ is the 256-bin histogram of channel $C$ for image $k$.
            ▼
 ┌──────────────────────────────┐
 │  Compare against all images  │
-│  using Euclidean distance    │
+│  using Mean Squared Error    │
 │  (MSE) on histogram vectors  │
 └──────────┬───────────────────┘
            │
@@ -74,7 +74,7 @@ where $H_C^k$ is the 256-bin histogram of channel $C$ for image $k$.
 ## 📊 Datasets
 
 ### CIFAR-10
-- **60,000** images (32×32 px) across 10 classes
+- **60,000** images (32×32 px) across 10 classes (retrieval is performed on the first **1,000** images)
 - Loaded directly via `tensorflow.keras.datasets`
 - Classes: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
 
@@ -90,7 +90,7 @@ where $H_C^k$ is the 256-bin histogram of channel $C$ for image $k$.
 ### Prerequisites
 
 ```bash
-pip install numpy matplotlib tensorflow opencv-python
+pip install numpy matplotlib tensorflow
 ```
 
 ### Run the CIFAR-10 retrieval
@@ -143,8 +143,21 @@ item: 29.jpg  amount of: 70% of similar pictures are from item's category
 
 ---
 
+## 👤 Author
+
+**Mohammad Asadolahi**
+- **Role:** Senior Agentic AI Engineer
+- **Focus:** Agentic AI Architectures In The Wild
+- **GitHub:** [https://github.com/MohammadAsadolahi](https://github.com/MohammadAsadolahi)
+
+---
+
 <div align="center">
 
 **Built with NumPy, Matplotlib, and the elegance of simple math.**
 
 </div>
+
+---
+
+*this readme is AI assisted generated, so check for mistakes*
